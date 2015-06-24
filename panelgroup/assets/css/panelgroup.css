@@ -1,0 +1,14 @@
+.field-group {
+    border: 2px solid #DDD;
+    padding: 1em 1.5em 0px 0px;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+.field-group H2 {
+  border-bottom: 2px solid #DDD;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  color: #666;
+  }
