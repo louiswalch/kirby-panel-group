@@ -9,7 +9,7 @@ This is a custom field which can be added to the [Kirby CMS](http://getkirby.com
 
 ## Installation
 
-To install, copy the `panelgroup` folder into site/fields.
+To install, copy the contents of this repistory into site/fields/panelgroup, or follow the GIT Submodule instructions below.
 
 ## Blueprint
 
