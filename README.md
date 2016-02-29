@@ -11,7 +11,7 @@ This is a custom field which can be added to the [Kirby CMS](http://getkirby.com
 
 To install, copy the contents of this repistory into site/fields/panelgroup, or follow the GIT Submodule instructions below.
 
-## Blueprint
+## Basic Blueprint
 
 You must "start" and "end" your group to tell the Panel which fields are inside the group.
 
@@ -38,6 +38,46 @@ fields:
 
 ```
 
+## Advanced Blueprint
+
+You can also configure each panel to collapse/expand as accordians. For large pages this cleans up the Kirby Panel interface quite a bit.
+
+```
+fields:
+
+  title:
+    label: Title
+    type:  text
+
+  group_start:
+    label: My Accordian Group
+    type: panelgroup
+    position: start
+    accordian: true
+  some_title:
+    label: Title
+    type:  text
+  some_text:
+    label: Text
+    type:  textarea
+  group_end:
+    type: panelgroup
+    position: end
+
+  group_2_start:
+    label: Another Accordian Group
+    type: panelgroup
+    position: start
+    accordian: true
+  another_title:
+    label: Another Title
+    type:  text
+  group_2_end:
+    type: panelgroup
+    position: end
+
+
+```
 
 ### Git Submodule
 

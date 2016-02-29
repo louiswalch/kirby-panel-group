@@ -1,14 +1,33 @@
 .field-group {
     border: 2px solid #bbb;
-    padding: 1em 1.5em 0px 0px;
+    padding: 1em 1.5em 0 0;
     margin-left: 1.5em;
     margin-bottom: 1.5em;
 }
 .field-group H2 {
-  border-bottom: 2px solid #bbb;
-  margin-left: 1.5em;
-  margin-bottom: 1.5em;
   padding-bottom: 1em;
   text-transform: uppercase;
   color: #666;
+  margin-left: 1.5em;
   }
+.field-group H2 I {
+    float: right;
+    display: none;
+}
+
+.field-group-content {
+}
+.field-group-content-border {
+  height: 2px;
+  background-color: #bbb;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+.field-group.is-accordian H2 { cursor: pointer; }
+.field-group.is-accordian H2:hover { color: black; }
+.field-group.is-accordian H2 I { display: block; }
+
+.field-group.is-accordian .field-group-content { display: none; }
+.field-group.is-accordian.open .field-group-content { display: block; }
