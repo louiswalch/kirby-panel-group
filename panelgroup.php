@@ -21,7 +21,7 @@ class PanelGroupField extends BaseField {
 
     public function content_start() {
 
-        $class = ($this->accordian === true) ? 'is-accordian' : '';
+        $class = (isset($this->accordian) && $this->accordian === true) ? 'is-accordian' : '';
 
         return '<div class="field-group open '.$class.'" data-field="panelgroup" name="panelgroup" groupname="'.$this->label.'">'
         . $this->label()
