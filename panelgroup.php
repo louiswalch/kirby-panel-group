@@ -21,7 +21,7 @@ class PanelGroupField extends BaseField {
 
     public function content_start() {
 
-        $class = (isset($this->accordion) && $this->accordion === true) ? 'is-accordion' : '';
+        $class = ($this->is_accordion()) ? 'is-accordion' : '';
 
         return '<div class="field-group open '.$class.'" data-field="panelgroup" name="panelgroup" groupname="'.$this->label.'">'
         . $this->label()
@@ -48,6 +48,21 @@ class PanelGroupField extends BaseField {
 
     public function template() {
         return $this->content();
+    }
+
+    protected function is_accordion() {
+
+        if (isset($this->accordion) && is_bool($this->accordion) {
+            return $this->accordion;
+        } 
+
+        // Legacy support to misspelled variable.
+        if (isset($this->accordian) && is_bool($this->accordian) {
+            return $this->accordian;
+        } 
+
+        return false;
+
     }
 
 }
