@@ -2,7 +2,7 @@
   "name": "panelgroup",
   "description": "Custom UI element to enable grouping of fields inside the Kirby Panel",
   "author": "Louis Walch <me@louiswalch.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "kirby-field",
   "license": "MIT"
 }
