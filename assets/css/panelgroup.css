@@ -25,9 +25,9 @@
 }
 
 
-.field-group.is-accordian H2 { cursor: pointer; }
-.field-group.is-accordian H2:hover { color: black; }
-.field-group.is-accordian H2 I { display: block; }
+.field-group.is-accordion H2 { cursor: pointer; }
+.field-group.is-accordion H2:hover { color: black; }
+.field-group.is-accordion H2 I { display: block; }
 
-.field-group.is-accordian .field-group-content { display: none; }
-.field-group.is-accordian.open .field-group-content { display: block; }
+.field-group.is-accordion .field-group-content { display: none; }
+.field-group.is-accordion.open .field-group-content { display: block; }
