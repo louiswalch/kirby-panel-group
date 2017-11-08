@@ -40,7 +40,7 @@ fields:
 
 ## Advanced Blueprint
 
-You can also configure each panel to collapse/expand as accordians. For large pages this cleans up the Kirby Panel interface quite a bit.
+You can also configure each panel to collapse/expand as accordions. For large pages this cleans up the Kirby Panel interface quite a bit.
 
 ```
 fields:
@@ -50,10 +50,10 @@ fields:
     type:  text
 
   group_start:
-    label: My Accordian Group
+    label: My Accordion Group
     type: panelgroup
     position: start
-    accordian: true
+    accordion: true
   some_title:
     label: Title
     type:  text
@@ -65,10 +65,10 @@ fields:
     position: end
 
   group_2_start:
-    label: Another Accordian Group
+    label: Another Accordion Group
     type: panelgroup
     position: start
-    accordian: true
+    accordion: true
   another_title:
     label: Another Title
     type:  text

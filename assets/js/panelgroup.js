@@ -17,7 +17,7 @@ var log = function(s){
         var panel = $(this).closest('.field-group');
 
         // Some panels are just grouped fields
-        if (!panel.hasClass('is-accordian')) return false;
+        if (!panel.hasClass('is-accordion')) return false;
 
         panel.find('H2').click(function() {
             panel.toggleClass('open');
