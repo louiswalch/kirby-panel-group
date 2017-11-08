@@ -9,7 +9,33 @@ This is a custom field which can be added to the [Kirby CMS](http://getkirby.com
 
 ## Installation
 
-To install, copy the contents of this repistory into site/fields/panelgroup, or follow the GIT Submodule instructions below.
+**Manually**
+To install manually, simply copy the contents of this repository into a `site/fields/panelgroup` folder inside your Kirby website.
+
+**Using The Kirby CLI**
+You can instal the Panel Group field using the **[Kirby CLI](https://github.com/getkirby/cli)**. Once you have the Kirby CLI installed, simply do:
+
+```bash
+$ cd your/project/root
+$ kirby plugin:install louiswalch/kirby-panel-group
+```
+
+**As a Git Submodule**
+
+If you are an advanced user and know your way around Git and you already use Git to manage you project, you can make updating this field extension to newer releases a breeze by adding it as a Git submodule.
+
+```bash
+$ cd your/project/root
+$ git submodule add git@github.com:louiswalch/kirby-panel-group.git site/fields/panelgroup
+```
+
+Updating all your Git submodules (eg. the Kirby core modules and any extensions added as submodules) to their latest version, all you need to do is to run these two Git commands.
+
+```bash
+$ cd your/project/root
+$ git submodule foreach --recursive git checkout master
+$ git submodule foreach --recursive git pull
+```
 
 ## Basic Blueprint
 
@@ -78,19 +104,3 @@ fields:
 
 
 ```
-
-### Git Submodule
-
-If you are an advanced user and know your way around Git and you already use Git to manage you project, you can make updating this field extension to newer releases a breeze by adding it as a Git submodule.
-
-```bash
-$ cd your/project/root
-$ git submodule add git@github.com:louiswalch/kirby-panel-group.git site/fields/panelgroup
-```
-
-Updating all your Git submodules (eg. the Kirby core modules and any extensions added as submodules) to their latest version, all you need to do is to run these two Git commands.
-
-```bash
-$ cd your/project/root
-$ git submodule foreach --recursive git checkout master
-$ git submodule foreach --recursive git pull
