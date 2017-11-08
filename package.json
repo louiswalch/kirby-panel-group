@@ -1,5 +1,5 @@
 {
-  "name": "Kirby Panel Group",
+  "name": "panelgroup",
   "description": "Custom UI element to enable grouping of fields inside the Kirby Panel",
   "author": "Lois Walch <me@louiswalch.com>",
   "version": "1.0.1",
