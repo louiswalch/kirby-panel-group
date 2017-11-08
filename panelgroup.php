@@ -52,12 +52,12 @@ class PanelGroupField extends BaseField {
 
     protected function is_accordion() {
 
-        if (isset($this->accordion) && is_bool($this->accordion) {
+        if (isset($this->accordion) && is_bool($this->accordion)) {
             return $this->accordion;
         } 
 
         // Legacy support to misspelled variable.
-        if (isset($this->accordian) && is_bool($this->accordian) {
+        if (isset($this->accordian) && is_bool($this->accordian)) {
             return $this->accordian;
         } 
 
