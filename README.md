@@ -10,9 +10,11 @@ This is a custom field which can be added to the [Kirby CMS](http://getkirby.com
 ## Installation
 
 **Manually**
+
 To install manually, simply copy the contents of this repository into a `site/fields/panelgroup` folder inside your Kirby website.
 
 **Using The Kirby CLI**
+
 You can instal the Panel Group field using the **[Kirby CLI](https://github.com/getkirby/cli)**. Once you have the Kirby CLI installed, simply do:
 
 ```bash
